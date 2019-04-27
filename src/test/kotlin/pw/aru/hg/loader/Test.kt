@@ -1,17 +1,15 @@
-package pw.aru.hungergames
+package pw.aru.hg.loader
 
-import pw.aru.hungergames.events.EventFormatter
-import pw.aru.hungergames.game.HarmfulAction
-import pw.aru.hungergames.game.HarmlessAction
-import pw.aru.hungergames.game.Phase
-import pw.aru.hungergames.loader.loadFile
-import pw.aru.hungergames.loader.parseHarmfulActions
-import pw.aru.hungergames.loader.parseHarmlessActions
-import pw.aru.hungergames.phases.*
+import pw.aru.hg.engine.HungerGamesBuilder
+import pw.aru.hg.engine.events.EventFormatter
+import pw.aru.hg.engine.game.HarmfulAction
+import pw.aru.hg.engine.game.HarmlessAction
+import pw.aru.hg.engine.game.Phase
+import pw.aru.hg.engine.phases.*
 import java.io.File
 
 fun main(args: Array<String>) {
-    val hungerGames: pw.aru.hungergames.HungerGames = HungerGamesBuilder()
+    val hungerGames: pw.aru.hg.engine.HungerGames = HungerGamesBuilder()
         .bloodbathActions(
             harmlessActions("game/events/bloodbath_harmless.txt"),
             harmfulActions("game/events/bloodbath_harmful.txt")

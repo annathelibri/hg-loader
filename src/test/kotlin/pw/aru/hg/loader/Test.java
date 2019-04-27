@@ -1,16 +1,16 @@
-package pw.aru.hungergames;
+package pw.aru.hg.loader;
 
-import pw.aru.hungergames.events.EventFormatter;
-import pw.aru.hungergames.game.*;
-import pw.aru.hungergames.phases.*;
+import pw.aru.hg.engine.HungerGames;
+import pw.aru.hg.engine.HungerGamesBuilder;
+import pw.aru.hg.engine.events.EventFormatter;
+import pw.aru.hg.engine.game.*;
+import pw.aru.hg.engine.phases.*;
 
 import java.io.File;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
-
-import static pw.aru.hungergames.loader.HungerGamesLoaderKt.*;
 
 public class Test {
     public static void main(String[] args) {
@@ -216,11 +216,11 @@ public class Test {
     }
 
     private static List<HarmfulAction> harmfulActions(String file) {
-        return parseHarmfulActions(loadFile(new File(file)));
+        return pw.aru.hg.loader.HungerGamesLoaderKt.parseHarmfulActions(pw.aru.hg.loader.HungerGamesLoaderKt.loadFile(new File(file)));
     }
 
     private static List<HarmlessAction> harmlessActions(String file) {
-        return parseHarmlessActions(loadFile(new File(file)));
+        return pw.aru.hg.loader.HungerGamesLoaderKt.parseHarmlessActions(pw.aru.hg.loader.HungerGamesLoaderKt.loadFile(new File(file)));
     }
 
     private static <T> List<T> listOf(T o) {

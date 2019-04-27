@@ -1,17 +1,17 @@
-package pw.aru.hungergames.loader
+package pw.aru.hg.loader
 
-import pw.aru.hungergames.data.SimpleTribute
-import pw.aru.hungergames.game.Effect
-import pw.aru.hungergames.game.HarmfulAction
-import pw.aru.hungergames.game.HarmlessAction
-import pw.aru.hungergames.game.Tribute
-import pw.aru.hungergames.tuples.ParserOptions.NO_IMPLICIT_TUPLES
-import pw.aru.hungergames.tuples.ParserOptions.NO_SMART_TUPLES
-import pw.aru.hungergames.tuples.TupleParser
-import pw.aru.hungergames.tuples.data.Obj
-import pw.aru.hungergames.tuples.data.Pair
-import pw.aru.hungergames.tuples.data.Text
-import pw.aru.hungergames.tuples.data.Tuple
+import pw.aru.hg.engine.data.SimpleTribute
+import pw.aru.hg.engine.game.Effect
+import pw.aru.hg.engine.game.HarmfulAction
+import pw.aru.hg.engine.game.HarmlessAction
+import pw.aru.hg.engine.game.Tribute
+import pw.aru.hg.tuples.ParserOptions.NO_IMPLICIT_TUPLES
+import pw.aru.hg.tuples.ParserOptions.NO_SMART_TUPLES
+import pw.aru.hg.tuples.TupleParser
+import pw.aru.hg.tuples.data.Obj
+import pw.aru.hg.tuples.data.Pair
+import pw.aru.hg.tuples.data.Text
+import pw.aru.hg.tuples.data.Tuple
 import java.io.File
 
 fun loadFile(file: File): List<String> {
