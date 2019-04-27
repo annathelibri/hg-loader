@@ -79,7 +79,7 @@ bintray {
     key = bintrayApiKey
     publications = ['BintrayRelease']
     pkg {
-        repo = 'maven'
+        repo = 'hg'
         name = project.name
         userOrg = 'arudiscord'
         licenses = ['Apache-2.0']
